@@ -3,7 +3,7 @@ import logging.config
 from flask import Flask
 
 from aarons_website import views
-from aarons_website.logging import init_logging
+from aarons_website.custom_logging import init_logging
 
 
 def create_app(config_overrides=None):

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <!-- set icon for page: -->
+    <!-- <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='bhs.ico') }}"> -->
+    <title>Aaron's Site</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body class="message">
+    <!-- <div class="container">
+      <div class="column">
+
+        <div class="navbar">
+          <a class="navbar-brand" href="{{ url_for('root.list') }}">
+            <img src="{{ url_for('static', filename='BPA.png') }}">
+          </a>
+          <a href="{{ url_for('root.search') }}">Search</a>
+          <a href="{{ url_for('root.about') }}">About</a>
+        </div> -->
+        
+    {% if title %}
+    <h1>{{ title }}</h1>
+    {% endif %}
+    {% block content %}{% endblock %}
+</div>
+</div>
+  </body>
+</html>
